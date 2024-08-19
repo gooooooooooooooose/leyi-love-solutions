@@ -41,7 +41,7 @@ function App() {
             spacing="0.5rem"
             aria-label="spacing button group"
             value={color}
-            onChange={(event, newValue) => {
+            onChange={(_event, newValue) => {
               setColor(newValue ?? "");
             }}
             variant="soft"
@@ -62,7 +62,7 @@ function App() {
           <ToggleButtonGroup
             spacing="0.5rem"
             value={number}
-            onChange={(event, newValue) => {
+            onChange={(_event, newValue) => {
               setNumber(newValue ?? "");
             }}
             variant="soft"
